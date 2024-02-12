@@ -9,13 +9,13 @@ import CodeHealth from './pages/CodeHealth';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/harbour-mockup">
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />}></Route>
                 <Route path="/mentor" element={<Mentor />} />
-                <Route path="codehealth" element={<CodeHealth />}></Route>
-                <Route path="assessment" element={<Assessment />}></Route>
+                <Route path="/codehealth" element={<CodeHealth />}></Route>
+                <Route path="/assessment" element={<Assessment />}></Route>
             </Route>
         </Routes>
     </BrowserRouter>
